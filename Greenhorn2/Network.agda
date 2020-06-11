@@ -5,6 +5,10 @@ open import Cubical.Data.Nat renaming ( _+_     to plus
                                       ; +-suc   to plus-suc )
 open import Cubical.Data.NatPlusOne
 
+{-
+This file is inspired by the paper An Initial-Algebra Approach to Directed Acyclic Graphs by Jeremy Gibbons.
+Most of the laws for the 𝔾 data type are from the laws Gibbons gives for DAMGS.
+-}
 module Greenhorn2.Network (ℓ ℓ₁   : Level)
                           (State  : ℕ₊₁ → Type ℓ)
                           (Memory : ℕ₊₁ → Type ℓ₁) where
